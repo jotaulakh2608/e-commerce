@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit'
 import productReducer from './Components/Products/productSlice';
 import cartReducer from './Components/Cart/cartSlice';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,12 +19,12 @@ const store = configureStore({
   },
 })
 root.render(
-<BrowserRouter>
+<HashRouter basename='/'>
 <Provider store={store} >
     <App  />
 
 </Provider>
-</BrowserRouter>
+</HashRouter >
   
 );
 

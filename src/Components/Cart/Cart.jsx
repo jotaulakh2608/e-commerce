@@ -15,8 +15,9 @@ export const Cart = () => {
 </h1>
 
     </div>
-    <div className="">
-{product.map((p,i)=>(
+    <div className={`${product.length===0?'items-center flex justify-center h-24':''}`}>
+
+{product.length>0?product.map((p,i)=>(
     <div key={i} className="border-b flex mb-2 p-3  ">
 <div className="w-36">
 
@@ -45,7 +46,7 @@ export const Cart = () => {
     
    
 </div>
-))}
+)):<h1 className='text-xl'>Your cart is empty</h1>}
     </div>
     </div>
     <div className="w-1/4 bg-white h-44 p-4 border ">
