@@ -3,19 +3,21 @@ import {useSelector,useDispatch} from 'react-redux'
 import {IoMdCart} from 'react-icons/io'
 import { showCart } from './Cart/cartSlice'
 import { CartDropdown } from './Cart/CartDropdown'
+import { Navigate, useNavigate } from 'react-router-dom'
 export const Navbar = () => {
   const show = useSelector((state)=> state.cart.show)
   const dispatch= useDispatch()
+  const navigate = useNavigate()
   const product = useSelector((state)=>state.cart.cart)
   return (
     <>
 
 <nav class="bg-white px-2  sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
   <div class="container flex flex-wrap justify-between items-center mx-auto">
-  <a href="https://flowbite.com/" class="flex items-center">
+  <span onClick={()=>navigate('/cart')}  class="flex items-center">
       <img src="https://www.pinpng.com/pngs/m/582-5827885_sikh-cartoon-hd-png-download.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>
       <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">E-Punjabi</span>
-  </a>
+  </span>
   <div class="flex md:order-2">
   <div className='text-3xl text-white cursor-pointer' onClick={()=>dispatch(showCart())}  >
 
