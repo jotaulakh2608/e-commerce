@@ -12,7 +12,7 @@ export const Navbar = () => {
   return (
     <>
 
-<nav class="bg-white px-2  sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+<nav class=" px-2  sm:px-4 py-2.5 bg-gray-900 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
   <div class="container flex flex-wrap justify-between items-center mx-auto">
   <span onClick={()=>navigate('/cart')}  class="flex items-center">
       <img src="https://www.pinpng.com/pngs/m/582-5827885_sikh-cartoon-hd-png-download.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo"/>
