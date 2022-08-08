@@ -19,12 +19,12 @@ const store = configureStore({
   },
 })
 root.render(
-<HashRouter basename='/'>
 <Provider store={store} >
+<HashRouter basename='/'>
     <App  />
 
-</Provider>
 </HashRouter >
+</Provider>
   
 );
 
