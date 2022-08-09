@@ -10,7 +10,7 @@ const dispatch= useDispatch()
 const navigate = useNavigate()
 console.log(product);
   return (
-    <div className={`  absolute border border-black p-3 h-64 z-40 w-56 top-20 right-16 bg-white   `}>
+    <div className={`  absolute border border-black p-3 h-64 z-40 w-56 lg:top-20 top-14 right-2 lg:right-2 bg-white   `}>
     <div className={`${product.length===0 ?'items-center justify-center':''} h-[182px]
 scroll overflow-scroll
 flex flex-col scrollbar-hide`}>

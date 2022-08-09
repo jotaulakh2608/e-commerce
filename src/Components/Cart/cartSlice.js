@@ -51,6 +51,8 @@ state.total= state.total += state.cart[existingIndex].price
     state.cart = state.cart.filter(product=>(product.id !== action.payload.id))
 }},
     removeFromCart:(state, action)=>{
+        const itemIndex = state.cart.findIndex(p=>p.id ===action.payload.id)
+        state.total= state.total - state.cart[itemIndex].price
         state.cart = state.cart.filter(product=>(product.id !== action.payload.id))
     }
 }
