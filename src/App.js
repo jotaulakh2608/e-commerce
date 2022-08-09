@@ -1,8 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { useEffect, useState } from 'react';
-import { Users } from './Components/Users';
-import { Todos } from './Components/Todos';
+
 import { Navbar } from './Components/Navbar';
 import { Products } from './Components/Products/Products';
 import {

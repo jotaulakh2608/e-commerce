@@ -3,10 +3,7 @@ import React, { useEffect, useState } from 'react'
 export const Users = () => {
     const [users, setusers] = useState([])
   const [term, setterm] = useState('')
-const fun=()=>{
-    let a=4
-    return a
-}
+
 
 const arr = [1 , 3, 5, 100]
 
